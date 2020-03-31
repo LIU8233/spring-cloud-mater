@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="lhj-server-one" />
+        <module name="lhj-server-three" />
+        <module name="lhj-server-two" />
+        <module name="springcloud-api" />
+        <module name="springcloud-config-server" />
+        <module name="springcloud-gateway" />
+        <module name="springcloud-server" />
+        <module name="springcloud-web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

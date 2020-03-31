@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="/plugins/bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="/bs-table-1.11/bootstrap-table.css">
+    <link rel="stylesheet" href="/layer/mobile/need/layer.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/plugins/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/bs-table-1.11/bootstrap-table.js"></script>
+    <script type="text/javascript" src="/bs-table-1.11/locale/bootstrap-table-zh-CN.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/layer/layer.js"></script>
+    <script type="text/javascript" src="/v1/modules/index/index.js"></script>
+</head>
+<body>
+<div class="main-inside">
+    <div class="inside-con-main">
+        <div class="tabbable">
+            <div class="tab-content clearfix">
+                <form id="searchForm" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label">名称：</label>
+                        <div class="col-xs-2">
+                            <input id="myName" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="btn-list text-center">
+                        <button class="btn btn-y" onclick="fm.query()">查询</button>
+                        <button class="btn btn-n mrl6" onclick="fm.reset()">重置</button>
+                    </div>
+                </form>
+                <div id="searchResultPanel">
+                    <div class="base-table-wrap mrt6" >
+                        <div class="table-tit" id="tabTitle">查询结果</div>
+                        <table id="myTable"
+                               class="table table-hover table-no-bordered base-table text-nowrap">
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
